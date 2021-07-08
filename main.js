@@ -20,13 +20,11 @@ var images = [
   function imgDisp(num) {
     var num = Math.floor(Math.random()*14);
     img.style.backgroundImage = 'url(" ' + images[num] +'")';
-    backgroundRepeat = "no-repeat";
-    width: 100%
-    position: "centercenter";
   }
 
 imgDisp();
 
+// DOM= vincularlo en el document something modelvincular variable fotos con
 
 var scale =  2,
   panning = false,
