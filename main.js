@@ -32,22 +32,22 @@ var scale =  2,
   pointX = 0,
   pointY = 0,
   start = { x: 0, y: 0 },
-  img = imgDisp();
+  img = images;
 
   function setTransform() {
-    img.style.transform = "scale(" + scale + ")";
+    fotos.style.transform = "scale(" + scale + ")";
   }
-    //
+
     // pointX = (e.clientX - start.x);
     //       pointY = (e.clientY - start.y);
     //       setTransform();
     //     }
-
-img.onwheel = function (e) {
+//
+fotos.onwheel = function (e) {
   e.preventDefault();
   var xs = (e.clientX - pointX) / scale,
     ys = (e.clientY - pointY) / scale,
-    delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY;
+    delta = e.wheelDelta ? e.wheelDelta : -e.deltaY;
     (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
     pointX = e.clientX - xs * scale;
     pointY = e.clientY - ys * scale;
