@@ -1,0 +1,69 @@
+* {
+  padding: 100;
+  margin: 0;
+  outline: 0;
+  overflow: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div #logo {
+  width: 20%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(255, 0, 0);
+}
+
+
+
+h1,h2,li {
+  color:rgb(238, 68, 53);
+  position: center;
+  padding: 300;
+  font-family: Helvetica
+
+}
+
+/* #nombre {
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+  transform: scale(1) translate(0px, 0px);
+} */
+
+
+div {
+  position: absolute;
+  height: 100%;
+  width:100%;
+}
+
+/* en este caso el width debería ser 100% para que la imagen siempre esté
+fit to page en x y no se coma una parte de la imagen en sus laterales */
+
+body{
+  background-size: cover;
+  background-color: black;
+  font-family: Helvetica
+}
+
+
+a {
+  color:rgb(114, 113, 114);
+  padding: 200px;
+
+}
+
+p{
+  color: rgb(238, 68, 53);
+  padding: 0px;
+  font-family: Helvetica
+
+}
