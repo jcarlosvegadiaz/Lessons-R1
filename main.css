@@ -39,11 +39,11 @@ h1,h2,li {
 } */
 
 
-div {
+/* div {
   position: absolute;
   height: 100%;
   width:100%;
-}
+} */
 
 /* en este caso el width debería ser 100% para que la imagen siempre esté
 fit to page en x y no se coma una parte de la imagen en sus laterales */

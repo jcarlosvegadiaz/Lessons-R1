@@ -21,6 +21,7 @@ var images = [
     var num = Math.floor(Math.random()*14);
     img.style.backgroundImage = 'url(" ' + images[num] +'")';
     backgroundRepeat = "no-repeat";
+    width: 100%
     position: "centercenter";
   }
 
