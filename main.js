@@ -1,12 +1,9 @@
-
-  var images = document.getElementById("estas");
-
-
-
   function imgDisp(num) {
     var num = Math.floor(Math.random()*14);
     estas.style.backgroundImage = 'url(" ' + images[num] +'")';
   }
+
+    // var images  = document.getElementById("estas");
 
 imgDisp();
 
@@ -28,7 +25,7 @@ var scale =  2,
     //       setTransform();
     //     }
 //
-estas.onwheel = function (e) {
+estas.onwheel = function() {
   e.preventDefault();
   var xs = (e.clientX - pointX) / scale,
     ys = (e.clientY - pointY) / scale,
