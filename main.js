@@ -1,24 +1,41 @@
-  function imgDisp() {
-    var num = (Math.random(15));
-    document.getElementById('estas')
-    estas.style.backgroundImage = 'url(" ' + images[num] +'")';
-  }
+var images = [
+    '/Volumes/information studio 2/Proyectos/2021/Website/Lessons R1/Images/00.JPG',
+    'Images/01.JPG',
+    'Images/02.JPG',
+    'Images/03.JPG',
+    'Images/04.JPG',
+    'Images/05.JPG',
+    'Images/06.JPG',
+    'Images/07.JPG',
+    'Images/08.JPG',
+    'Images/09.JPG',
+    'Images/10.JPG',
+    'Images/11.JPG',
+    'Images/12.JPG',
+    'Images/13.JPG'
+  ];
 
-    // var images  = document.getElementById("estas");
+  var img = document.getElementById("fotos");
+
+  function imgDisp() {
+    var num = Math.floor(Math.random()*14);
+    img.style.backgroundImage = 'url(" ' + images[num] +'")';
+    backgroundRepeat = "no-repeat";
+    position: "centercenter";
+  }
 
 imgDisp();
 
-// DOM= vincularlo en el document something modelvincular variable fotos con
 
 var scale =  2,
   panning = false,
   pointX = 0,
   pointY = 0,
   start = { x: 0, y: 0 },
-  img = estas;
+  img = images;
 
   function setTransform() {
-    estas.style.transform = "scale(" + scale + ")";
+    imgDisp.style.transform = "scale(" + scale + ")";
   }
 
     // pointX = (e.clientX - start.x);
@@ -26,8 +43,8 @@ var scale =  2,
     //       setTransform();
     //     }
 //
-estas.onwheel = function() {
-  e.preventDefault();
+onwheel = function (e) {
+  // e.preventDefault();
   var xs = (e.clientX - pointX) / scale,
     ys = (e.clientY - pointY) / scale,
     delta = e.wheelDelta ? e.wheelDelta : -e.deltaY;
