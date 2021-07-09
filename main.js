@@ -35,15 +35,21 @@ var scale =  2,
   img = images;
 
   function setTransform() {
-    imgDisp.style.transform = "scale(" + scale + ")";
+// revisar esta referencia
+    imgDisp
+
+    .style.transform = "scale(" + scale + ")";
   }
 
     // pointX = (e.clientX - start.x);
     //       pointY = (e.clientY - start.y);
     //       setTransform();
     //     }
-//
-imgDisp.onwheel = function (e) {
+
+// revisar esta referencia
+imgDisp
+
+.onwheel = function (e) {
   // e.preventDefault();
   var xs = (e.clientX - pointX) / scale,
     ys = (e.clientY - pointY) / scale,
