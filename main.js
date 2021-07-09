@@ -43,7 +43,7 @@ var scale =  2,
     //       setTransform();
     //     }
 //
-onwheel = function (e) {
+imgDisp.onwheel = function (e) {
   // e.preventDefault();
   var xs = (e.clientX - pointX) / scale,
     ys = (e.clientY - pointY) / scale,
