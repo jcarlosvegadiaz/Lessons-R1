@@ -17,7 +17,7 @@ var images = [
 
   var img = document.getElementById("fotos");
 
-  function imgDisp(num) {
+  function imgDisp() {
     var num = Math.floor(Math.random()*14);
     img.style.backgroundImage = 'url(" ' + images[num] +'")';
     backgroundRepeat = "no-repeat";
@@ -44,7 +44,7 @@ var scale =  2,
     //     }
 //
 fotos.onwheel = function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   var xs = (e.clientX - pointX) / scale,
     ys = (e.clientY - pointY) / scale,
     delta = e.wheelDelta ? e.wheelDelta : -e.deltaY;
