@@ -1,5 +1,6 @@
-  function imgDisp(num) {
-    var num = Math.floor(Math.random()*14);
+  function imgDisp() {
+    var num = (Math.random(15));
+    document.getElementById('estas')
     estas.style.backgroundImage = 'url(" ' + images[num] +'")';
   }
 
