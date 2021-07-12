@@ -20,7 +20,9 @@ $(window).load(function() {
 
   var img = $('<img id="fotos" src="' + images[num] + '" style="width:100%">');
   img.appendTo('#container');
-  // img.style.backgroundRepeat = "no-repeat";
-  // img.style.position = "centercenter";
   wheelzoom(img);
+
+  // to go to page2 just set the window.location
+  // window.location = 'page2.html'
+  // you'll want to listen to the change events on the img for when the background-size changes
 });
