@@ -1,21 +1,24 @@
 var images = [
-    '/Volumes/information studio 2/Proyectos/2021/Website/Lessons R1/Images/00.JPG',
-    'Images/01.JPG',
-    'Images/02.JPG',
-    'Images/03.JPG',
-    'Images/04.JPG',
-    'Images/05.JPG',
-    'Images/06.JPG',
-    'Images/07.JPG',
-    'Images/08.JPG',
-    'Images/09.JPG',
-    'Images/10.JPG',
-    'Images/11.JPG',
-    'Images/12.JPG',
-    'Images/13.JPG'
-  ];
+  'images/00.JPG',
+  'images/01.JPG',
+  'images/02.JPG',
+  'images/03.JPG',
+  'images/04.JPG',
+  'images/05.JPG',
+  'images/06.JPG',
+  'images/07.JPG',
+  'images/08.JPG',
+  'images/09.JPG',
+  'images/10.JPG',
+  'images/11.JPG',
+  'images/12.JPG',
+  'images/13.JPG'
+];
 
-  var img = document.getElementById("fotos");
+
+
+var img = document.getElementById("fotos");
+console.log(img);
 
   function imgDisp(num) {
     var num = Math.floor(Math.random()*14);
@@ -27,12 +30,12 @@ var images = [
 imgDisp();
 
 
-var scale =  2,
+var scale = 2,
   panning = false,
   pointX = 0,
   pointY = 0,
-  start = { x: 0, y: 0 },
-  img = imgDisp();
+  start = { x: 0, y: 0 };
+  // img = imgDisp();
 
   function setTransform() {
     img.style.transform = "scale(" + scale + ")";
@@ -45,11 +48,10 @@ var scale =  2,
 
 img.onwheel = function (e) {
   e.preventDefault();
-  var xs = (e.clientX - pointX) / scale,
-    ys = (e.clientY - pointY) / scale,
-    delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY;
-    (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
-    pointX = e.clientX - xs * scale;
-    pointY = e.clientY - ys * scale;
-    setTransform();
+  var xs = (e.clientX - pointX) / scale;
+  var ys = (e.clientY - pointY) / scale;
+  // var  delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+  var   pointX = e.clientX - xs * scale;
+  var   pointY = e.clientY - ys * scale;
+  setTransform();
   }
