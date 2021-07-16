@@ -6,10 +6,10 @@
 }
 
 html, body {
+  max-width: inherit;
   padding: 0;
   overflow: hidden;
   min-height: 100vh;
-    max-width: 100vh;
     margin: 0 auto;
 }
 
