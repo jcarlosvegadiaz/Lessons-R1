@@ -1,21 +1,10 @@
 var images = [
-    'images/00.JPG',
-    'images/01.JPG',
-    'images/02.JPG',
-    'images/03.JPG',
-    'images/04.JPG',
-    'images/05.JPG',
-    'images/06.JPG',
-    'images/07.JPG',
-    'images/08.JPG',
-    'images/09.JPG',
-    'images/10.JPG'
-  ];
+  'images/11 nformation.png'
+];
 
-$(window).load(function() {
-  var num = Math.floor(Math.random() * 11);
-
-  var img = $('<img id="fotos" src="' + images[num] + '" style="width:100%">');
+// $(window).load(function() {
+//   var num = Math.floor(Math.random() * 11);
+//   var img = $('<img id="fotos" src="' + images[num] + '" style="width:100%">');
   img.appendTo('#container');
   wheelzoom(img);
   // to go to page2 just set the window.location
@@ -40,4 +29,4 @@ $(window).load(function() {
 
   var domImg = document.getElementById('fotos')
   observer.observe(domImg, { attributes : true, attributeFilter : ['style'] });
-});
+// });

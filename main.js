@@ -18,6 +18,9 @@ var images = [
 
 
 var img = document.getElementById("fotos");
+
+// jquery instead of using the bare DOM api
+// var img = $("#fotos")
 console.log(img);
 
   function imgDisp(num) {
