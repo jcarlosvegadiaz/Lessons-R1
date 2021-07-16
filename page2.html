@@ -1,24 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title>Page #2</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="./main.css"/>
     <script src= "wheelzoom.js"></script>
-    <!-- <script src= "simpler.js"></script> -->
+    <script src= "simpler.js"></script>
   </head>
-
-  
-
 
   <body>
 
     <h1></h1>
     <div id="testmenu">
-    <h2>Page 2</h2>
-    </div>
-
-    <div id="container" >
-      <img src= "/images/11 nformation.png" alt= "logo" id= "logo" />
+    <h2>Projects</h2>
     </div>
         </body>
 
@@ -31,10 +24,11 @@
 </div>
 
 
+<div id="nformation" >
+</div>
+
     <div class="container">
-      <div class="box">1
-        <!-- <img src="/Users/in.formationstudio/Desktop/TieSol_Norte Rcontmayuscula-min.jpeg" alt="tiesol"> -->
-      </div>
+      <div class="box"> <p> 1 </p> </div>
       <div class="box">2</div>
       <div class="box">3</div>
       <div class="box">4</div>
@@ -54,6 +48,16 @@
   
     </div>
   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".box").hover(function(){
+        $(this).css("opacity","0%");
+        }, function(){
+        $(this).css("opacity", "100%");
+      });
+    });
+    </script>
       <style type = "text/css">
   
         .container{
@@ -72,10 +76,12 @@
         }
   
         .box{
+          /* <img src="/Users/in.formationstudio/Desktop/TieSol_Norte Rcontmayuscula-min.jpeg" alt="tiesol"> */
           width: 600px;
           height:300px;
           background: rgb(199, 191, 191); 
           margin: 5px;
+          text-align: center;
           box-sizing: border-box;
           font-size: 50px;
     

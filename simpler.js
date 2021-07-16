@@ -2,10 +2,10 @@ var images = [
   'images/11 nformation.png'
 ];
 
-// $(window).load(function() {
-//   var num = Math.floor(Math.random() * 11);
-//   var img = $('<img id="fotos" src="' + images[num] + '" style="width:100%">');
-  img.appendTo('#container');
+$(window).load(function() {
+  var num = Math.floor(Math.random() * 1);
+  var img = $('<img id="fotos" src="' + images[num] + '" style="width:100%">');
+  img.appendTo('#nformation');
   wheelzoom(img);
   // to go to page2 just set the window.location
   // window.location = 'page2.html'
@@ -22,7 +22,7 @@ var images = [
         console.log("THE TYPE is " + typeof(backgroundSizeX))
         console.log(backgroundSizeY)
         if (backgroundSizeX > 20000) {
-          window.location = './page2.html'
+          window.location = './page3.html'
         }
     });
   });

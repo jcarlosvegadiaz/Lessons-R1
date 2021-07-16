@@ -32,7 +32,7 @@ $(window).load(function() {
         console.log(backgroundSizeX)
         console.log("THE TYPE is " + typeof(backgroundSizeX))
         console.log(backgroundSizeY)
-        if (backgroundSizeX > 20000) {
+        if (backgroundSizeX > 10000) {
           window.location = './page2.html'
         }
     });

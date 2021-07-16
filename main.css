@@ -27,13 +27,12 @@ html, body {
   color: rgb(255, 0, 0);
 }
 
-
-
 h1,h2,li {
   color:rgb(238, 68, 53);
-  position: center;
+  text-align: right;
   padding: 300;
   font-family: Helvetica
+  
 
 }
 
