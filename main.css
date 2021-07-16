@@ -36,9 +36,11 @@ h1 {
 
 h2,li {
   color:rgb(238, 68, 53);
-  text-align: right;
+  text-align: left;
   padding: 300;
-  font-family: Helvetica
+  font-family: Helvetica;
+  vertical-align: inherit;
+  display: inline;
 }
 
 /* #nombre {
