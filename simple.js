@@ -1,19 +1,28 @@
 var images = [
-    'images/00.JPG',
-    'images/01.JPG',
-    'images/02.JPG',
-    'images/03.JPG',
-    'images/04.JPG',
-    'images/05.JPG',
-    'images/06.JPG',
-    'images/07.JPG',
-    'images/08.JPG',
-    'images/09.JPG',
-    'images/10.JPG'
+    'backgroundimages/00.JPG',
+    'backgroundimages/01.JPG',
+    'backgroundimages/02.JPG',
+    'backgroundimages/03.JPG',
+    'backgroundimages/04.JPG',
+    'backgroundimages/05.JPG',
+    'backgroundimages/06.JPG',
+    'backgroundimages/07.JPG',
+    'backgroundimages/08.JPG',
+    'backgroundimages/09.JPG',
+    'backgroundimages/10.JPG',
+    'backgroundimages/11.JPG',
+    'backgroundimages/12.JPG',
+    'backgroundimages/13.JPG',
+    'backgroundimages/14.JPG',
+    'backgroundimages/15.JPG',
+    'backgroundimages/16.JPG',
+    'backgroundimages/17.JPG',
+    'backgroundimages/18.JPG',
+    'backgroundimages/19.JPG'
   ];
 
 $(window).load(function() {
-  var num = Math.floor(Math.random() * 11);
+  var num = Math.floor(Math.random() * 20);
 
   var img = $('<img id="fotos" src="' + images[num] + '" style="width:100%">');
   img.appendTo('#container');
